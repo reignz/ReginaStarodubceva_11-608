@@ -24,7 +24,7 @@ namespace ConsoleApplication46
             {
                 page = reader.ReadToEnd();
             };
-            var maches = a.Matches(page);
+            var matches = a.Matches(page);
             foreach(Match match in maches)
             {
                 var file = match.Value.Replace(@"/\""", "").Split('.');
